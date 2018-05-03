@@ -1,0 +1,19 @@
+\contentsline {section}{\numberline {1}制作LOGO}{3}{section.1}
+\contentsline {section}{\numberline {2}Skill教程}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Allegro skill介绍}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Allegro skill设置方法}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}AlignTool}{5}{subsection.2.3}
+\contentsline {section}{\numberline {3}制作异形过孔}{5}{section.3}
+\contentsline {section}{\numberline {4}从之前的工程中导入光绘设置}{5}{section.4}
+\contentsline {section}{\numberline {5}新建SubClass}{6}{section.5}
+\contentsline {section}{\numberline {6}Allegro设置快捷键}{7}{section.6}
+\contentsline {subsection}{\numberline {6.1}快捷键介绍}{7}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}修改快捷键}{7}{subsection.6.2}
+\contentsline {section}{\numberline {7}钽电容画法}{8}{section.7}
+\contentsline {subsection}{\numberline {7.1}电源去耦电容的作用}{8}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}钽电容画法}{8}{subsection.7.2}
+\contentsline {section}{\numberline {8}Allegro配色方案}{8}{section.8}
+\contentsline {subsection}{\numberline {8.1}ETCH}{8}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Net}{9}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}其他辅助层}{9}{subsection.8.3}
+\contentsline {section}{\numberline {9}盲埋孔设计}{9}{section.9}

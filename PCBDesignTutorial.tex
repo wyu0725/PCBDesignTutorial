@@ -30,7 +30,7 @@
 \usepackage[siunitx]{circuitikz}
 \usepackage{tikz}
 \usepackage{blindtext}
-\usepackage[colorlinks,urlcolor=blue]{hyperref}
+\usepackage[colorlinks,urlcolor=blue,linkcolor=blue]{hyperref}
 \usepackage{listings}
 \usepackage{color}
 \lstset{breaklines}%这条命令可以让LaTeX自动将长的代码行换行排版
@@ -150,19 +150,34 @@ Allegro中本身默认了一些快捷键，但是使用起来不太方便，大�
 通俗来说滤波电容的作用就是保证芯片供电量增大时供电能够保证，一般使用一个小的陶瓷电容配上一个大的钽电容。打个比方，两个电容就像水窖和水库，当芯片耗电量突然增加时，首先从陶瓷电容上放出电荷，WTW.
 \subsection{钽电容画法}
 钽电容的焊盘一般都比较大，如果还是用6mil或8mil的走线将其连到相应的电源和GND上势必会造成较大的走线电感，和钽电容的寄生电感一叠加就雪上加霜了。更重要的是，用细的走线势必要用小过孔，小过孔不仅增加电感，过大电流能力还不好，那就用大过孔+粗走线，如下图所示
-\begin{figure}[htbp]
+\begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.3\textwidth]{figures/CapacitorWith40milVia.png}
 	\label{Fig:CapacitorWith40milVia}
 	\caption{用40mil走线和40mil过孔连接钽电容}
 \end{figure}
 \\一个钽电容用40mil的走线连到一个40mil的过孔上，问题是解决了，但是大的地孔会将地平面和电源平面打出一些洞，如果不幸有走线在这些洞附近，其地回路必然受到影响。还有更优的选项，在焊盘上铺上一层铜，然后在铜皮上打许多小过孔，这样寄生电感更小还可以塞孔，如下图所示，相当于把钽电容的焊盘增大了一部分用于打过孔。这样的方法同样适用于其他需要和内电层良好接触的表贴焊盘。
-\begin{figure}[htbp]
+\begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.3\textwidth]{figures/CapacitorWithShape.png}
 	\label{fig:CapacitorWithShape}
 	\caption{在钽电容焊盘上铺铜然后打小孔}
 \end{figure}
-\section{Allegro配色标准}
+\section{Allegro配色方案}
+Allegro提供不同的颜色将不同的subclass的颜色区分开有助于PCB设计，不同人有不同的配色标准，本无不可，但是相互之间查看电路板还是会带来障碍，因此在这里提供一种配色方案，希望大家都采用。\\
+\subsection{ETCH}
+\begin{center}
+\textcolor[rgb]{1,0,0}{Top 红色}\\
+\textcolor[rgb]{0.13,0.8,0.94}{Signal1 天蓝色}\\
+\textcolor[rgb]{1,0.5,0}{Signal2 橘黄色}\\
+\textcolor[rgb]{1,0,1}{Signal3 粉红色}\\
+更多的内电层颜色请自定义鲜艳的颜色\\
+\textcolor[rgb]{0,0,1}{Bottom层 深蓝色}\\
+\end{center}
+\subsection{Net}
+目前只规定\textcolor[rgb]{0,1,0}{GND}的颜色为\textcolor[rgb]{0,1,0}{青青草原色}\\
+电源请自行选择鲜艳颜色，可以和ETCH的颜色重复
+\subsection{其他辅助层}
+\colorbox[rgb]{0.5,0.5,0.5}{\textcolor[rgb]{1,1,1}{Top层丝印白色}}, \colorbox[rgb]{0.5,0.5,0.5}{\textcolor[rgb]{1,1,0}{Bottom层丝印黄色}}
 \section{盲埋孔设计}
 \end{document}
