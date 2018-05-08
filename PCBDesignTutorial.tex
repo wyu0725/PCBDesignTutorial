@@ -1,59 +1,70 @@
-% \iffalse meta-comment
-%
-% Copyright 1993 1994 1995 1996 1997 1998 1999 2000 2001
-% The LaTeX3 Project and any individual authors listed elsewhere
-% in this file. 
-% 
-% This file is part of the LaTeX base system.
-% -------------------------------------------
-% 
-% It may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License, either version 1.2
-% of this license or (at your option) any later version.
-% The latest version of this license is in
-%    http://www.latex-project.org/lppl.txt
-% and version 1.2 or later is part of all distributions of LaTeX 
-% version 1999/12/01 or later.
-% 
-% The list of all files belonging to the LaTeX base distribution is
-% given in the file `manifest.txt'. See also `legal.txt' for additional
-% information.
-% 
-% \fi
-% Filename: usrguide.tex
+%!TEX program = xelatex
+\documentclass[color=green,mathpazo,titlestyle=hang,11pt]{elegantbook}
 
-%\NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\documentclass[a4paper,twoside]{article}
-\usepackage{geometry}
-\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
-\usepackage[UTF8]{ctex}
-\usepackage[siunitx]{circuitikz}
-\usepackage{tikz}
-\usepackage{blindtext}
-\usepackage[colorlinks,urlcolor=blue,linkcolor=blue]{hyperref}
+\author{Wang Yu}
+\email{wyu0831@hotmail.com}
+\zhtitle{PCB设计}
+\zhend{教程}
+\entitle{PCB Design}
+\enend{Tutorial}
+\version{1.0}
+\myquote{Victory won\rq t come to us unless we go to it.}
+\logo{PCBLogo.pdf}
+\cover{cover.pdf}
+
+%green color
+   \definecolor{main1}{RGB}{0,120,2}
+   \definecolor{seco1}{RGB}{230,90,7}
+   \definecolor{thid1}{RGB}{0,160,152}
+%cyan color
+   \definecolor{main2}{RGB}{0,175,152}
+   \definecolor{seco2}{RGB}{239,126,30}
+   \definecolor{thid2}{RGB}{120,8,13}
+%blue color
+   \definecolor{main3}{RGB}{20,50,104}
+   \definecolor{seco3}{RGB}{180,50,131}
+   \definecolor{thid3}{RGB}{7,127,128}
+
+\usepackage{makecell}
+\usepackage{lipsum}
+\usepackage{texnames}
 \usepackage{listings}
 \usepackage{color}
 \lstset{breaklines}%这条命令可以让LaTeX自动将长的代码行换行排版
 \lstset{extendedchars=false}%这一条命令可以解决代码跨页时，章节标题，页眉等汉字不显示的问题
-\graphicspath{{figures/}}
-\title{Cadence Allegro技巧}
-
-\author{\href{mailto:wyu0831@hotmail.com}{Wang Yu}\\ Department of Modern Physics, USTC}
-
-\date{\today}
-
 
 \begin{document}
-
 \maketitle
-
-% \tableofcontents
-
-\abstract{说明}
-本文档用于记录平时使用Allegro的技巧，做为胡佳栋教程的补充
-\clearpage
 \tableofcontents
-\clearpage
+\mainmatter
+\chapter*{说明}
+本文档教程来源于\href{mailto:hdjemail@mail.ustc.edu.cn}{Hu Jiadong}整理的文字版，内容来自于于博士视频。\\
+有些内容是平时使用Allegro的技巧，做为教程的补充\\
+教程发布在\href{https://zh.wikipedia.org/wiki/Wikipedia:%E5%9D%8F%E7%AC%91%E8%AF%9D%E5%92%8C%E5%88%A0%E9%99%A4%E7%9A%84%E8%83%A1%E8%AF%9D/GitHub}{著名同性交友网站-Github}上，地址是\href{https://github.com/wyu0725/PCBDesignTutorial}{https://github.com/wyu0725/PCBDesignTutorial}。方便大家下载查看，可以自行修改，唯一的要求是开源。\\
+另外教程也可移步\href{https://wyu0725.github.io}{我的博客}，扫面下方二维码关注我的微信公众号亦可\\
+本文档使用的模板来自于ElegantBook，网址已经停止维护了，但是其中一个作者的博客还在更新\href{http://ddswhu.com/}{Ethlisan}，感谢作者提供模板
+
+\chapter{使用Capture画原理图}
+\chapter{建议规范}
+以下规范是在画板过程中总结出来的，不代表一定要遵守，但是请尽量按照这个规范来画，如有不当请指正。
+\section{Allegro配色方案}
+Allegro提供不同的颜色将不同的subclass的颜色区分开有助于PCB设计，不同人有不同的配色标准，本无不可，但是相互之间查看电路板还是会带来障碍，因此在这里提供一种配色方案，希望大家都采用。\\
+\subsection{ETCH}
+\begin{center}
+\textcolor[rgb]{1,0,0}{Top 红色}\\
+\textcolor[rgb]{0.13,0.8,0.94}{Signal1 天蓝色}\\
+\textcolor[rgb]{1,0.5,0}{Signal2 橘黄色}\\
+\textcolor[rgb]{1,0,1}{Signal3 粉红色}\\
+更多的内电层颜色请自定义鲜艳的颜色\\
+\textcolor[rgb]{0,0,1}{Bottom层 深蓝色}\\
+\end{center}
+\subsection{Net}
+目前只规定\textcolor[rgb]{0,1,0}{GND}的颜色为\textcolor[rgb]{0,1,0}{青青草原色}\\
+电源请自行选择鲜艳颜色，可以和ETCH的颜色重复
+\subsection{其他辅助层}
+\colorbox[rgb]{0.5,0.5,0.5}{\textcolor[rgb]{1,1,1}{Top层丝印白色}}, \colorbox[rgb]{0.5,0.5,0.5}{\textcolor[rgb]{1,1,0}{Bottom层丝印黄色}}
+\chapter{使用Allegro画PCB}
+\chapter{平时的一些经验}
 \section{制作LOGO}
 	\begin{enumerate}
 		\item 需要准备一张bmp格式的图片，如下图所示 \\ \includegraphics[width=0.3\textwidth]{figures/SDHCALFEB1V0.png}
@@ -163,21 +174,7 @@ Allegro中本身默认了一些快捷键，但是使用起来不太方便，大�
 	\label{fig:CapacitorWithShape}
 	\caption{在钽电容焊盘上铺铜然后打小孔}
 \end{figure}
-\section{Allegro配色方案}
-Allegro提供不同的颜色将不同的subclass的颜色区分开有助于PCB设计，不同人有不同的配色标准，本无不可，但是相互之间查看电路板还是会带来障碍，因此在这里提供一种配色方案，希望大家都采用。\\
-\subsection{ETCH}
-\begin{center}
-\textcolor[rgb]{1,0,0}{Top 红色}\\
-\textcolor[rgb]{0.13,0.8,0.94}{Signal1 天蓝色}\\
-\textcolor[rgb]{1,0.5,0}{Signal2 橘黄色}\\
-\textcolor[rgb]{1,0,1}{Signal3 粉红色}\\
-更多的内电层颜色请自定义鲜艳的颜色\\
-\textcolor[rgb]{0,0,1}{Bottom层 深蓝色}\\
-\end{center}
-\subsection{Net}
-目前只规定\textcolor[rgb]{0,1,0}{GND}的颜色为\textcolor[rgb]{0,1,0}{青青草原色}\\
-电源请自行选择鲜艳颜色，可以和ETCH的颜色重复
-\subsection{其他辅助层}
-\colorbox[rgb]{0.5,0.5,0.5}{\textcolor[rgb]{1,1,1}{Top层丝印白色}}, \colorbox[rgb]{0.5,0.5,0.5}{\textcolor[rgb]{1,1,0}{Bottom层丝印黄色}}
+
 \section{盲埋孔设计}
+
 \end{document}
