@@ -1,13 +1,13 @@
 # Fdb version 3
-["xdvipdfmx"] 1525792887 "PCBDesignTutorial.xdv" "PCBDesignTutorial.pdf" "PCBDesignTutorial" 1525792890
-  "PCBDesignTutorial.xdv" 1525792887 161168 54e0fffeeab47cde482a03389f143ae9 "xelatex"
+["xdvipdfmx"] 1525793342 "PCBDesignTutorial.xdv" "PCBDesignTutorial.pdf" "PCBDesignTutorial" 1525793345
+  "PCBDesignTutorial.xdv" 1525793342 161032 54d61924dbf78fd6de8c35d9f77d728c "xelatex"
   (generated)
   "PCBDesignTutorial.pdf"
-["xelatex"] 1525792883 "PCBDesignTutorial.tex" "PCBDesignTutorial.xdv" "PCBDesignTutorial" 1525792890
-  "PCBDesignTutorial.aux" 1525792887 3942 dd916af7ab538bb6e398bc3b028f7876 ""
-  "PCBDesignTutorial.out" 1525792887 1575 a6c43fc3aa4e372b99fa2b0719022d8e ""
-  "PCBDesignTutorial.tex" 1525792791 12050 e231e25448c19f83e74306c3eb01944d ""
-  "PCBDesignTutorial.toc" 1525792887 1835 40da08d0a1f27d0c08714f7cfa056ecd ""
+["xelatex"] 1525793338 "PCBDesignTutorial.tex" "PCBDesignTutorial.xdv" "PCBDesignTutorial" 1525793345
+  "PCBDesignTutorial.aux" 1525793342 3942 dd916af7ab538bb6e398bc3b028f7876 ""
+  "PCBDesignTutorial.out" 1525793342 1575 a6c43fc3aa4e372b99fa2b0719022d8e ""
+  "PCBDesignTutorial.tex" 1525793336 12078 91fe5aa59b41215cbd319d1f99f53a66 ""
+  "PCBDesignTutorial.toc" 1525793342 1835 40da08d0a1f27d0c08714f7cfa056ecd ""
   "base.tex" 1391432376 1096 731ee2b552ffcb4e5fee1e6424e98605 ""
   "d:/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1524722829 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "d:/texlive/2017/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm" 1524723670 1804 7b5f73028f6509167f47ace9d69509ed ""
@@ -221,8 +221,8 @@
   "figures/SystemEnviroment.png" 1524040935 88877 602fde1316dbefd2777539b938d7ad61 ""
   "figures/cover.pdf" 1525791029 48163 f931701319da915e469a489d82d216d9 ""
   (generated)
-  "PCBDesignTutorial.log"
   "PCBDesignTutorial.xdv"
-  "PCBDesignTutorial.aux"
   "PCBDesignTutorial.toc"
+  "PCBDesignTutorial.log"
   "PCBDesignTutorial.out"
+  "PCBDesignTutorial.aux"
