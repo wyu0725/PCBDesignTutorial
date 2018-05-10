@@ -27,6 +27,7 @@
 
 \usepackage{makecell}
 \usepackage{lipsum}
+
 \usepackage{texnames}
 \usepackage{listings}
 \usepackage{color}
@@ -38,15 +39,19 @@
 \tableofcontents
 \mainmatter
 \chapter*{说明}
-本文档教程来源于\href{mailto:hdjemail@mail.ustc.edu.cn}{Hu Jiadong}整理的文字版，内容来自于于博士视频。\\
-有些内容是平时使用Allegro的技巧，做为教程的补充\\
+本文档画原理图和PCB教程主要来源于\href{mailto:hdjemail@mail.ustc.edu.cn}{Hu Jiadong}整理的文字版，内容来自于于博士视频。\\
+技巧方面的内容是平时使用Allegro的技巧，做为教程的补充\\
+规范部分来源于平时经验以及《高速数字设计课程内容》\\
 教程发布在\href{https://zh.wikipedia.org/wiki/Wikipedia:%E5%9D%8F%E7%AC%91%E8%AF%9D%E5%92%8C%E5%88%A0%E9%99%A4%E7%9A%84%E8%83%A1%E8%AF%9D/GitHub}{著名同性交友网站-Github}上，地址是\href{https://github.com/wyu0725/PCBDesignTutorial}{https://github.com/wyu0725/PCBDesignTutorial}。方便大家下载查看，可以自行修改，唯一的要求是开源。\\
 另外教程也可移步\href{https://wyu0725.github.io}{我的博客}，扫面下方二维码关注我的微信公众号亦可\\
+\begin{center}
+\includegraphics[width=0.4\textwidth]{figures/MyQRCode.png}\\
+\end{center}
 本文档使用的模板来自于ElegantBook，网址已经停止维护了，但是其中一个作者的博客还在更新\href{http://ddswhu.com/}{Ethlisan}，感谢作者提供模板
 
 \chapter{使用Capture画原理图}
 \chapter{建议规范}
-以下规范是在画板过程中总结出来的，不代表一定要遵守，但是请尽量按照这个规范来画，如有不当请指正。
+以下规范是在画板过程中总结出来的，分为三类：必须遵守、强烈建议和个人建议。请尽量按照这个规范来画，如有不当请指正。
 \section{Allegro配色方案}
 Allegro提供不同的颜色将不同的subclass的颜色区分开有助于PCB设计，不同人有不同的配色标准，本无不可，但是相互之间查看电路板还是会带来障碍，因此在这里提供一种配色方案，希望大家都采用。\\
 \subsection{ETCH}

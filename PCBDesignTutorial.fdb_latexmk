@@ -1,9 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1525829003 "PCBDesignTutorial.tex" "PCBDesignTutorial.pdf" "PCBDesignTutorial" 1525829160
-  "PCBDesignTutorial.aux" 1525829160 3942 dd916af7ab538bb6e398bc3b028f7876 ""
-  "PCBDesignTutorial.out" 1525829160 1575 a6c43fc3aa4e372b99fa2b0719022d8e ""
-  "PCBDesignTutorial.tex" 1525793336 12078 91fe5aa59b41215cbd319d1f99f53a66 ""
-  "PCBDesignTutorial.toc" 1525829159 1835 40da08d0a1f27d0c08714f7cfa056ecd ""
+["pdflatex"] 1525934355 "PCBDesignTutorial.tex" "PCBDesignTutorial.pdf" "PCBDesignTutorial" 1525934475
+  "PCBDesignTutorial.aux" 1525934474 3942 f1553f0f28b1b14d73c29d915f1d87bb ""
+  "PCBDesignTutorial.out" 1525934474 1575 a6c43fc3aa4e372b99fa2b0719022d8e ""
+  "PCBDesignTutorial.tex" 1525934225 12312 b0fe79bb7d6288f3bbcfcafd608b91ad ""
+  "PCBDesignTutorial.toc" 1525934474 1835 40da08d0a1f27d0c08714f7cfa056ecd ""
   "base.tex" 1391432376 1096 731ee2b552ffcb4e5fee1e6424e98605 ""
   "d:/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1479291206 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "d:/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm" 1479291705 1804 7b5f73028f6509167f47ace9d69509ed ""
@@ -211,6 +211,7 @@
   "figures/EvenViaSetting.png" 1523764104 3418 a4b3e8dc07165e8f63987a16743d0c1e ""
   "figures/FileImportLogo.png" 1523760775 28168 7f43e04e9b41dc0e1b997e918c194a33 ""
   "figures/LogoImport.png" 1523760862 6118 f7991e86186918b47516510760b5fac7 ""
+  "figures/MyQRCode.png" 1525934255 27423 db16213ac7a3a529870e68390a499132 ""
   "figures/NewSubclass.png" 1523862653 19403 bbc2c8ae1fe49046f8d00de9e1f2aaaa ""
   "figures/OptionClassAndSubClass.png" 1523761198 6856 961297f44d91b0e7fc52f70719272ea6 ""
   "figures/PCBLogo.pdf" 1525828991 11495 52611c4e297b95d509f557adcdbd4e84 ""
@@ -220,8 +221,8 @@
   "figures/SystemEnviroment.png" 1524040935 88877 602fde1316dbefd2777539b938d7ad61 ""
   "figures/cover.pdf" 1525828922 48173 0d8f75ba7396acd22417f933a7497c4b ""
   (generated)
+  "PCBDesignTutorial.pdf"
   "PCBDesignTutorial.out"
+  "PCBDesignTutorial.log"
   "PCBDesignTutorial.toc"
   "PCBDesignTutorial.aux"
-  "PCBDesignTutorial.pdf"
-  "PCBDesignTutorial.log"

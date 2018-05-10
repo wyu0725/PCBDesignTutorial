@@ -372,6 +372,7 @@ INPUT ./figures/cover.pdf
 INPUT PCBDesignTutorial.toc
 INPUT PCBDesignTutorial.toc
 OUTPUT PCBDesignTutorial.toc
+INPUT figures/MyQRCode.png
 INPUT figures/SDHCALFEB1V0.png
 INPUT figures/CreateFormatSymbol.png
 INPUT figures/FileImportLogo.png
